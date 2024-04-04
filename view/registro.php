@@ -18,9 +18,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="style/registro.css">
+    <link rel="stylesheet" href="../assets/css/registro.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/logo 1.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/logo 1.svg" type="image/x-icon">
 </head>
 <body>
     <div class="wrapper">

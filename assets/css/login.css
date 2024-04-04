@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(fundo.jpg);
+    background-image: url(../img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,5 +114,21 @@ body{
 }
 
 .registro p a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .voltar{
+    font-size: 14,5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.voltar p a{
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.voltar p a:hover{
     text-decoration: underline;
 }
