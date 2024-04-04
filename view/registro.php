@@ -1,3 +1,17 @@
+<?php  
+    if(isset($_POST['submit'])){
+
+        include_once('config.php');
+
+        $usuario = $_POST['usuario']; 
+        $email = $_POST['email']; 
+        $senha = $_POST['senha'];
+
+        $result = mysqli_query($conexao, "INSERT INTO cadastro(usuario, senha, email) 
+        VALUES('$usuario', '$senha', '$email')");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,7 +24,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="">
+        <form action="registro.php" method="POST">
             <h1>Registre-se</h1>
             <div class="input-box">
                 <input type="text" name="usuario" id="usuario" placeholder="Usuário">
@@ -27,7 +41,7 @@
                 <i class='bx bxs-lock-alt' ></i>
             </div>
 
-            <button type="submit" class="btn-Login">Registrar</button>
+            <button type="submit"  name="submit" id="submit" class="btn-Login">Registrar</button>
 
             <div class="registro">
                 <p>Já possui uma conta? 
