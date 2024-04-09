@@ -28,5 +28,6 @@
     <script src="../assets/javascript/splash.js"></script>
 
     <p>Entrou no sistema</p>
+    <a href="login.html">Sair</a>
 </body>
 </html>

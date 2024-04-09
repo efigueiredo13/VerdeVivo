@@ -41,11 +41,11 @@
                 <i class='bx bxs-lock-alt' ></i>
             </div>
 
-            <button type="submit"  name="submit" id="submit" class="btn-Login">Registrar</button>
+            <input type="submit" name="submit" class="btn-Login" value="Registrar">
 
             <div class="registro">
                 <p>Já possui uma conta? 
-                <a href="login.html"> Entrar</a></p>
+                <a href="login.php"> Entrar</a></p>
             </div>
         </form>
     </div>
