@@ -9,6 +9,8 @@
 
         $result = mysqli_query($conexao, "INSERT INTO cadastro(usuario, senha, email) 
         VALUES('$usuario', '$senha', '$email')");
+
+       
     }
 ?>
 

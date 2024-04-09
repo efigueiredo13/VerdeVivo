@@ -33,7 +33,7 @@
 
             <div class="registro">
                 <p>Não possui uma conta? 
-                <a href="registro.html">Registre-se</a></p>
+                <a href="registro.php">Registre-se</a></p>
             </div>
 
             <div class="voltar">
