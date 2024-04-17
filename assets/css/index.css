@@ -16,12 +16,12 @@ body{
 
 .cabecalho{
 
-max-width: 1900px;
+max-width: 2500px;
 height: 80px;
 display: flex;
 margin: 0 auto;
 justify-content: space-between;
-    align-items: center;
+align-items: center;
 flex-shrink: 0;
 background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #00816B 100%));
 }
@@ -106,6 +106,7 @@ margin-right: 50px;
     padding: 100px;
     
 }
+
 footer {
     background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
     color: white;
