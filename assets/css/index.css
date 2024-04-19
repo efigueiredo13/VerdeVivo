@@ -73,6 +73,15 @@ background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #00816B 100%));
     background: #00816B;
     color: #FFF;
 }
+
+.container3{
+    margin-top: 10px;
+    height: 350Gpx;
+    flex-shrink: 0;
+    background: #FFF;
+    color: #00816B;
+}
+
 #titulo_principal{
     color: var(--Dark) #000;
     -webkit-text-stroke-width: 3px;
@@ -102,6 +111,12 @@ margin-right: 50px;
 }
 
 .parte2{
+    text-align: center;
+    padding: 100px;
+    
+}
+
+.parte3{
     text-align: center;
     padding: 100px;
     
