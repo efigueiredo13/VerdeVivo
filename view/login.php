@@ -16,7 +16,7 @@
             <h1>Login</h1>
             
             <div class="input-box">
-                <input type="text" name="email" id="email" placeholder="E-mail ou Usuário">
+                <input type="text" name="usuario" id="usuario" placeholder="Usuário">
                 <i class='bx bxs-user' ></i>
             </div>
             
