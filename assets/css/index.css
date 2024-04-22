@@ -15,12 +15,10 @@ body{
     background-image: url(../img/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center ;
-    
+    background-position: center center;
 }
 
 .cabecalho{
-
 max-width: 2500px;
 height: 80px;
 display: flex;
@@ -73,15 +71,15 @@ background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #00816B 100%));
 
 .container2{
     margin-top: 130px;
-    height: 350Gpx;
+    height: 350px;
     flex-shrink: 0;
     background: #00816B;
     color: #FFF;
 }
 
 .container3{
-    margin-top: 10px;
-    height: 350Gpx;
+    margin-top: 15px;
+    height: 350px;
     flex-shrink: 0;
     background: var(--Segundaria, #FFF3D6);
     color: #00816B;
@@ -128,6 +126,11 @@ margin-right: 50px;
     
 }
 
+.parte4{
+    text-align: center;
+    padding: 100px;
+}
+
 footer {
     background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
     color: white;
@@ -135,5 +138,35 @@ footer {
     padding: 10px;
     
 }
+
+.container4 {
+    text-align: center;
+    height: 350px;
+    flex-shrink: 0;
+    background: var(--Segundaria, #00816B);
+    color: #FFF3D6;   
+}
+
+.fundador {
+    display: inline-block;
+    width: 200px; 
+    text-align: center;
+    margin: 20px;
+}
+.fundador img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.nome {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.cargo {
+    font-size: 14px;
+}
+
 
 
