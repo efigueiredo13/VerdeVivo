@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -41,7 +43,7 @@ background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #00816B 100%));
 
 .btn {
     padding: 10px 40px;
-    color: #FFF;
+    color: #FFF3D6;
     text-transform: uppercase;
     font-size: 1rem;
     margin-right: 40px;
@@ -56,7 +58,7 @@ background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #00816B 100%));
 }
 
 .btn-outline {
-    border: 2px solid #FFF;
+    border: 2px solid #FFF3D6;
     background-color: transparent;
 }
 
@@ -74,7 +76,7 @@ background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #00816B 100%));
     height: 350px;
     flex-shrink: 0;
     background: #00816B;
-    color: #FFF;
+    color: #FFF3D6;
 }
 
 .container3{
@@ -133,7 +135,7 @@ margin-right: 50px;
 
 footer {
     background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
-    color: white;
+    color: #FFF3D6;
     text-align: center;
     padding: 10px;
     
@@ -167,6 +169,17 @@ footer {
 .cargo {
     font-size: 14px;
 }
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+  }
+nav a {
+    color: #FFF3D6; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-size: 16px; 
+  }
 
 
 
