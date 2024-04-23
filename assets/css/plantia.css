@@ -74,6 +74,13 @@ body{
         color: #ccba86;
     }
 
+    .container{
+        max-width: 
+        1900px !important;
+        height: 350px;
+        flex-shrink: 0;
+      
+    }
     footer {
         background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
         color: white;
@@ -82,10 +89,3 @@ body{
         
     }
     
-    footer {
-        background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
-        color: white;
-        text-align: center;
-        padding: 10px;
-        
-    }

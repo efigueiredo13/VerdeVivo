@@ -133,14 +133,6 @@ margin-right: 50px;
     padding: 100px;
 }
 
-footer {
-    background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
-    color: #FFF3D6;
-    text-align: center;
-    padding: 10px;
-    
-}
-
 .container4 {
     text-align: center;
     height: 350px;
@@ -182,4 +174,10 @@ nav a {
   }
 
 
-
+  footer {
+    background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
+    color: #FFF3D6;
+    text-align: center;
+    padding: 10px;
+    
+}
