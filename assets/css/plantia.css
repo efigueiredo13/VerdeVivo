@@ -81,6 +81,60 @@ body{
         flex-shrink: 0;
       
     }
+
+    textarea {
+        width: 55em; 
+        height: 15em; 
+        padding: 10px;
+        margin-top: 30px; 
+        margin-bottom: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc; 
+        border-radius: 1rem; 
+        resize: vertical; 
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+    }
+
+    .btn-login{
+        width: 40%;
+        display: block;
+        padding: 10px 40px;
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border: 2px solid #FFF;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-bottom: 50px;
+        margin: 0 auto;
+      }
+
+      .btn-login:hover {
+        border-color: #ccba86;
+        color: #ccba86;
+    }
+    .input-wrapper input {
+        margin-bottom: 10px;
+        margin-top: 30px;
+        background-color: #ffffff;
+        border: none;
+        padding: 1rem;
+        font-size: 14px;
+        width: 55em;
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+      }
+      
+      .input-wrapper input:focus {
+        outline-color: rgb(0, 0, 0);
+      }
+
+      
+     
+    
     footer {
         background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
         color: white;

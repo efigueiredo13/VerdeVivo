@@ -23,9 +23,10 @@
     <link rel="stylesheet" href="../assets/css/splash.css">
     <link rel="stylesheet" href="../assets/css/tab.css">
     <link rel="shortcut icon" href="../assets/img/logo 1.svg" type="image/x-icon">
+    
 </head>
 <body>
-    
+    <!--
     <div class="splash">
             <div class="intro">
                 <img src="../assets/img/logo 1.svg" style="width: 12%;" alt="logo">
@@ -44,7 +45,7 @@
         </div>
     <script src="../assets/javascript/splash.js"></script>
     
-
+    <-->
     <div class="cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
             <div class="usuario-sair">
@@ -80,7 +81,7 @@
                     <h1 class="content-title">
                         
                     </h1>
-                    <iframe class="iaframe" src="https://www.blackbox.ai/agent/VerdeVivo2PPaGv8c" width="1000" height="500" allowfullscreen frameborder="0" scrolling="no"></iframe>
+                    <iframe class="iaframe" src="https://www.blackbox.ai/agent/VerdeVivo2Ymz1yG7" width="1000" height="500" allowfullscreen frameborder="0" scrolling="no"></iframe>
                     <p class="content-description">
                        
                     </p>
@@ -90,14 +91,21 @@
             <div class="content" id="cadastro-planta">
 
                 <div class="infos">
-                    <h1 class="content-title">
-                        Services
-                    </h1>
+                    <form action="#" method="POST">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Nome da Planta" name="nome_planta" id="nome_planta" class="input">
+                        </div>
 
-                    <p class="content-description">
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
-                    </p>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Tipo da Planta" name="tipo_planta" id="tipo_planta" class="input">
+                        </div>
+
+                        <textarea placeholder="Digite seu texto aqui..." name="descricao" id="descricao"></textarea>
+                        
+                        <input type="submit" name="submit" class="btn-login" value="Enviar">
+                    </form>
                 </div>
+
             </div>
             </div>
         </div>

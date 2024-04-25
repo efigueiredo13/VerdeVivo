@@ -7,10 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-
 .tab-buttons {
     display: flex;
     gap: 6px;
@@ -19,8 +15,8 @@
 .tab-btn {
     width: 100%;
     border: none;
-    color: #020617;
-    background-color: #f0f8ff;
+    color: #fff;
+    background-color: #83c2b7;
     border-radius: 8px 8px 0px 0px;
     font-weight: 500;
     padding: 8px;
@@ -29,11 +25,11 @@
 }
 
 .tab-btn.active {
-    background-color: #bdeec9;
+    background-color: #00816B;
 }
 
 .tab-btn:hover {
-    background-color: #3CAD5C;
+    background-color: #9bd6a3;
 }
 
 .content {
@@ -43,7 +39,7 @@
 .content.show {
     display: flex;
     gap: 14px;
-    background-color: #bdeec9;
+    background-color: #00816B;
     border-radius: 0px 0px 8px 8px;
     padding: 5px;
     justify-content: center;
@@ -52,4 +48,9 @@
 .content-img {
     width: 50%;
     height: 250px;
+}
+
+.infos{
+    justify-content: center;
+    align-items: center;
 }
