@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="../assets/css/plantia.css">
     <link rel="stylesheet" href="../assets/css/splash.css">
     <link rel="stylesheet" href="../assets/css/tab.css">
+    <link rel="stylesheet" href="../assets/css/card.css">
     <link rel="shortcut icon" href="../assets/img/logo 1.svg" type="image/x-icon">
     
 </head>
 <body>
-    <!--
+
+    
     <div class="splash">
             <div class="intro">
                 <img src="../assets/img/logo 1.svg" style="width: 12%;" alt="logo">
@@ -45,19 +47,81 @@
         </div>
     <script src="../assets/javascript/splash.js"></script>
     
-    <-->
-    <div class="cabecalho">
+    
+    <div class="cabecalho" id= "cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
             <div class="usuario-sair">
                 <?php 
                     echo "<p class='usuario'><u>$logado</u></p>";
                 ?>
-                <a class="btn btn-outline btn-sm" href="login.php">Sair</a>
+                <a class="btn btn-outline btn-sm" href="index.html">Sair</a>
             </div>
     </div>
 
     <div class="container">
+    <div class="position-card">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Como Usar a IA?</p> 
+                    <div>
+                        <img class="icon" src="../assets/img/icon-ia.svg" alt="icone de inteligencia artificial">
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">Comandos:</p>
+                    <div class="descricao">
+                        <p>Identifique o tipo da planta:<br> “Qual é o tipo da [nome da planta]?”<br></p>
+                        <p>Determine a qualidade do solo ideal:<br> “Qual é a qualidade do solo ideal para a [nome da planta]?”</p>
+                        <p>ou</p>
+                        <p>Determine a qualidade do solo ideal:<br> “Qual a porcentagem do solo ideal para [nome da planta]?”</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Como cadastro a planta?</p>
+                    <div>
+                        <img class="icon" src="../assets/img/icon-planta.svg" alt="icone de inteligencia artificial">
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">Para o cadastro:</p>
+                    <div class="descricao descricao2">
+                        <p>Acesse a aba de cadastro de planta.</p>
+                        <p>Insira o nome, tipo e descrição.</p>
+                        <p>A descrição a IA fornecerá informações<br> sobre a qualidade ideal da água para a planta.</p>
+                        <p>Copie e cole no campo descrição</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Medição de Umidade do Solo</p>
+                    <div>
+                        <img class="icon" src="../assets/img/icon-umidade.svg" alt="icone de inteligencia artificial">
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                <p class="title">Umidade do solo:</p>
+                    <div class="descricao descricao2">     
+                        <p>Clique no botão abaixo ou acesse o<br>  menu superior para verificar a umidade do solo.</p>
+                        <a class="btn-entrar-umidade" href="#">Entar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
     </div>
 
     <!------------Tabelas--------------->
@@ -76,7 +140,6 @@
 
         <div class="tab-contents">
             <div class="content" id="ia">
-                
                 <div class="infos">
                     <h1 class="content-title">
                         
@@ -85,28 +148,29 @@
                     <p class="content-description">
                        
                     </p>
-                </div>
             </div>
+        </div>
 
-            <div class="content" id="cadastro-planta">
+                <div class="content" id="cadastro-planta">
 
-                <div class="infos">
-                    <form action="#" method="POST">
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="Nome da Planta" name="nome_planta" id="nome_planta" class="input">
-                        </div>
+                    <div class="infos">
+                        <form action="#" method="POST">
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="Nome da Planta" name="nome_planta" id="nome_planta" class="input">
+                            </div>
 
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="Tipo da Planta" name="tipo_planta" id="tipo_planta" class="input">
-                        </div>
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="Tipo da Planta" name="tipo_planta" id="tipo_planta" class="input">
+                            </div>
 
-                        <textarea placeholder="Digite seu texto aqui..." name="descricao" id="descricao"></textarea>
-                        
-                        <input type="submit" name="submit" class="btn-login" value="Enviar">
-                    </form>
+                            <textarea placeholder="Digite seu texto aqui..." name="descricao" id="descricao"></textarea>
+                            
+                            <input type="submit" name="submit" class="btn-enviar-planta" value="Enviar">
+                        </form>
+                    </div>
+
                 </div>
-
-            </div>
+        </div>
             </div>
         </div>
     </div>
@@ -123,7 +187,6 @@
     <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 
     <script src="../assets/javascript/tab.js"></script>
-
 
 <footer>
     <p>© 2024 Verde Vivo. Todos os direitos reservados.</p>

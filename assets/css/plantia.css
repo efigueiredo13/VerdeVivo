@@ -11,6 +11,7 @@
 }
 
 body{
+    scroll-behavior: oth;
     height: 100vh;
     background: var(--Segundaria, #FFF3D6);
     font-family: Poppins;
@@ -75,9 +76,8 @@ body{
     }
 
     .container{
-        max-width: 
-        1900px !important;
-        height: 350px;
+        max-width: 1900px ;
+        height: 510px;
         flex-shrink: 0;
       
     }
@@ -96,7 +96,7 @@ body{
         cursor: pointer;
     }
 
-    .btn-login{
+    .btn-enviar-planta{
         width: 40%;
         display: block;
         padding: 10px 40px;
@@ -110,7 +110,7 @@ body{
         margin: 0 auto;
       }
 
-      .btn-login:hover {
+      .btn-enviar-planta:hover {
         border-color: #ccba86;
         color: #ccba86;
     }
