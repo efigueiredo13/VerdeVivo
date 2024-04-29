@@ -1,7 +1,7 @@
 <?php  
     if(isset($_POST['submit'])){
 
-        include_once('../model/config.php');
+        include_once('config.php');
 
         $usuario = $_POST['usuario']; 
         $email = $_POST['email']; 
