@@ -26,20 +26,20 @@
         {
             unset($_SESSION['usuario']);
             unset($_SESSION['senha']);
-            header('Location: login.php');
+            header('Location: ../view/login.php');
         }
         else
         {
             $_SESSION['usuario'] = $usuario;
             $_SESSION['senha'] = $senha;
-            header('Location: plantia.php');
+            header('Location: ../view/plantia.php');
         }
         
     }
     else
     {
         // Não acessa
-        header('Location: login.php');
+        header('Location: ../view/login.php');
     }
 
 ?>
