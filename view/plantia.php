@@ -119,7 +119,7 @@
                 <p class="title">Umidade do solo:</p>
                     <div class="descricao descricao2">     
                         <p>Clique no botão abaixo ou acesse o<br>  menu superior para verificar a umidade do solo.</p>
-                        <a class="btn-entrar-umidade" href="#">Entar</a>
+                        <a class="btn-entrar-umidade" href="#">Entrar</a>
                     </div>
                 </div>
             </div>
