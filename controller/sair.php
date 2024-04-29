@@ -3,5 +3,5 @@
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
     session_destroy();
-    header('Location: index.html');
+    header('Location: ../view/index.html');
 ?>

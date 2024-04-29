@@ -54,7 +54,7 @@
                 <?php 
                     echo "<p class='usuario'><u>$logado</u></p>";
                 ?>
-                <a class="btn btn-outline btn-sm" href="sair.php">Sair</a>
+                <a class="btn btn-outline btn-sm" href="../controller/sair.php">Sair</a>
             </div>
     </div>
 

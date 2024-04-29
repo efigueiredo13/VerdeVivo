@@ -12,7 +12,7 @@
     
     <div class="wrapper">
 
-        <form action="testeLogin.php" method="POST">
+        <form action="../model/testeLogin.php" method="POST">
             <h1>Login</h1>
             
             <div class="input-box">
