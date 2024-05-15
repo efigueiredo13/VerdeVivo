@@ -17,6 +17,18 @@ body{
     font-family: Poppins;
 }
 
+nav {
+    flex-grow: 1;
+    text-align: center;
+  }
+nav a {
+    color: #FFF3D6; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-size: 16px; 
+  }
+
+
 .cabecalho{
     max-width: 2500px;
     height: 80px;

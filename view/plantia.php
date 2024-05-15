@@ -54,6 +54,11 @@
     
     <div class="cabecalho" id= "cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
+            <nav>
+                <a href="lista_planta.php">Minhas Plantas</a>
+                <a href="medir_umidade.php">Medir Umidade</a>
+            </nav>
+
             <div class="usuario-sair">
                 <?php 
                     echo "<p class='usuario'><u>$logado</u></p>";
