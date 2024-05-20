@@ -59,7 +59,7 @@ nav a {
         display: flex;
         align-items: center;
     }
-    .btn {
+    .btn{
         
         padding: 10px 40px;
         color: #FFF;
@@ -91,4 +91,16 @@ nav a {
         height: 510px;
         flex-shrink: 0;
       
+    }
+    
+    .box-search{
+        margin-top: 5%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 0.5%;
+    }
+
+    .table-bg{
+        background-color: #00816B;
     }
