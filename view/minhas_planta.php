@@ -11,7 +11,7 @@
 
     $logado = $_SESSION['usuario'];
 
-    $sql = "SELECT id_planta, nome_planta, tipo_planta, descricao FROM cadastro_planta ORDER BY id_planta DESC";
+    $sql = "SELECT id_planta, nome_planta, tipo_planta, descricao FROM cadastro_planta ORDER BY id_planta ASC";
 
     $result = $conexao->query($sql);
 
@@ -29,12 +29,12 @@
 </head>
 <body>
 
-<div class="cabecalho" id= "cabecalho">
+    <div class="cabecalho" id= "cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
 
             <nav>
                 <a href="plantia.php">Plantia</a>
-                <a href="lista_planta.php">Minhas Plantas</a>
+                <a href="minhas_planta.php">Minhas Plantas</a>
                 <a href="medir_umidade.php">Medir Umidade</a>
             </nav>
             
@@ -76,7 +76,13 @@
                         echo "<td>".$user_data['nome_planta']."</td>";
                         echo "<td>".$user_data['tipo_planta']."</td>";
                         echo "<td>".$user_data['descricao']."</td>";
-                        echo "<td>açoes</td>";
+                        echo "<td>
+                            <a class='btn btn-sm btn-success' href='edit.php?id_planta=$user_data[id_planta]'>
+                            <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
+                                    <path d='M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325'/>
+                                    </svg>
+                            </a>
+                        </td>";
                         echo "<tr>";
                     }
                 ?>
@@ -91,10 +97,10 @@
                 <div class="vw-plugin-top-wrapper"></div>
             </div>
     </div>
-  
+    
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-
+    
     <script src="../assets/javascript/tab.js"></script>
 
 </body>
