@@ -16,9 +16,9 @@
                 $tipo_planta = $user_data['tipo_planta']; 
                 $descricao = $user_data['descricao'];
             }
-            
+
         }else{
-            header('Location: minhas_plantas.php');
+            header('Location: ../view/minhas_planta.php');
         }
 
     }

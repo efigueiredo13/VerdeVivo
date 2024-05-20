@@ -22,18 +22,21 @@
 
 <div class="container" id="cadastro-planta">
 
-    <form action="plantia.php" method="POST">
+    <form action="../model/salvar_edit.php" method="POST">
         <div class="input-wrapper">
-            <input type="text" placeholder="Nome da Planta" name="nome_planta" id="nome_planta" class="input" required>
+            <input type="text" placeholder="Nome da Planta" value="<?php echo $nome_planta?>" name="nome_planta" id="nome_planta" class="input" required>
         </div>
 
         <div class="input-wrapper">
-            <input type="text" placeholder="Tipo da Planta" name="tipo_planta" id="tipo_planta" class="input" required>
+            <input type="text" placeholder="Tipo da Planta" value="<?php echo $tipo_planta?>" name="tipo_planta" id="tipo_planta" class="input" required>
         </div>
 
-        <textarea placeholder="Digite seu texto aqui..." name="descricao" id="descricao" required></textarea>
-        
-        <input type="submit" name="submit" class="btn-enviar-planta" value="Enviar">
+        <div class="input-wrapper">
+            <input type="text" placeholder="Digite seu texto aqui..." value="<?php echo $descricao?>" name="descricao" id="descricao" class="input" required>
+        </div>
+
+        <input type="hidden" name="id_planta" value="<?php echo $id_planta ?>">
+        <input type="submit" name="update" class="btn-enviar-planta" value="Enviar" id="update">
     </form>
 
 

@@ -56,9 +56,8 @@
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
             <nav>
                 <a href="#">Plantia</a>
-                <a href="lista_planta.php">Minhas Plantas</a>
+                <a href="minhas_planta.php">Minhas Plantas</a>
                 <a href="medir_umidade.php">Medir Umidade</a>
-                
             </nav>
 
             <div class="usuario-sair">
