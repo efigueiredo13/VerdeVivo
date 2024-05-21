@@ -21,6 +21,8 @@
             header('Location: ../view/minhas_planta.php');
         }
 
+    }else{
+        header('Location: ../view/minhas_planta.php');
     }
 
 ?>

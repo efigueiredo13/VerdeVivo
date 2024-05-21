@@ -23,13 +23,52 @@
     <link rel="stylesheet" href="../assets/css/medir_umidade.css">
     <link rel="shortcut icon" href="../assets/img/logo 1.svg" type="image/x-icon">
 </head>
+<style>
+        .container {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .progress-bar {
+            width: 100%;
+            background: #e6e6e6;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 30px;
+            margin-top: 20px;
+        }
+        .progress-bar-inner {
+            height: 100%;
+            background: #4caf50;
+            width: 0;
+            transition: width 0.5s ease;
+        }
+        .value {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .progress-value {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
 <body>
 
 <div class="cabecalho" id= "cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
 
             <nav>
-                <a href="plantia.php">Plantia</a>
+                <a href="plantia.php">PlantIA</a>
                 <a href="minhas_planta.php">Minhas Plantas</a>
                 <a href="medir_umidade.php">Medir Umidade</a>
             </nav>
@@ -42,32 +81,44 @@
             </div>
     </div>
     <h1>Dados de Umidade do Solo</h1>
-    <?php
-      
-       // Defina a chave da sua API do ThingSpeak
-       $api_key = "W030R0LZO5GEVOQM";
-       
-       // URL da consulta para obter os últimos dados do ThingSpeak
-       $url = "https://api.thingspeak.com/channels/2538413/feed.json?api_key=" . $api_key . "&results=1";
-       
-       // Faz a solicitação HTTP para o ThingSpeak
-       $response = file_get_contents($url);
-       
-       // Decodifica a resposta JSON
-       $data = json_decode($response);
-       
-       // Verifica se a resposta foi bem-sucedida
-       if ($data !== false && isset($data->feeds[0])) {
-           // Extrai os dados do feed
-           $umidade = $data->feeds[0]->field1;
+    <div class="container">
+        <?php
+            
+            $api_key = "W030R0LZO5GEVOQM";
+            
+            
+            $url = "https://api.thingspeak.com/channels/2538413/feed.json?api_key=" . $api_key . "&results=1";
+            
+            
+            $response = file_get_contents($url);
+            
            
-           // Exibe os dados
-           echo "Umidade do Solo: " . $umidade . "%";
-       } else {
-           echo "Não foi possível obter os dados.";
-       }
-       
-    ?>
+            $data = json_decode($response);
+            
+            
+            if ($data !== false && isset($data->feeds[0])) {
+                
+                $umidade = $data->feeds[0]->field1;
+                echo "<div class='progress-bar' id='progress-bar'>
+                        <div class='progress-bar-inner' id='progress-bar-inner'></div>
+                        <div class='progress-value' id='progress-value'></div>
+                      </div>";
+                echo "<div class='value'>Umidade do Solo: " . $umidade . "%</div>";
+            } else {
+                echo "<div class='value'>Não foi possível obter os dados.</div>";
+            }
+        ?>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var umidade = <?php echo $umidade; ?>;
+            var progressBarInner = document.getElementById('progress-bar-inner');
+            var progressValue = document.getElementById('progress-value');
+            progressBarInner.style.width = umidade + '%';
+            progressValue.textContent = umidade + '%';
+        });
+    </script>
     
 <!--------------API de Libras--------------------->
 <div vw class="enabled">

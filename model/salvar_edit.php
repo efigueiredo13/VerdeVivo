@@ -1,7 +1,6 @@
 <?php
     include_once('config.php');
-
-      
+ 
         $id_planta = $_POST['id_planta'];
         $nome_planta = $_POST['nome_planta']; 
         $tipo_planta = $_POST['tipo_planta']; 
@@ -11,7 +10,7 @@
         
         $result = $conexao->query($sqlUpdate);
         
-    
+ 
     header('Location: ../view/minhas_planta.php');
     
    
