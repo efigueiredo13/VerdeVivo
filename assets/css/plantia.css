@@ -21,12 +21,16 @@ nav {
     flex-grow: 1;
     text-align: center;
   }
-nav a {
-    color: #FFF3D6; 
+  nav a {
+    color: #fff; 
     text-decoration: none; 
     margin: 0 15px; 
     font-size: 16px; 
   }
+nav a:hover{
+    color: #FFF3D6; 
+  }
+
 
 
 .cabecalho{
