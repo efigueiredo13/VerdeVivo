@@ -205,7 +205,7 @@ margin-right: 50px;
     color: #FFF3D6;
     text-align: center;
     padding: 10px;
-    
+    max-height: 2000px;
 }
 
 .grid-container {
@@ -229,3 +229,8 @@ margin-right: 50px;
     object-fit: cover; 
     border-radius: 8px; 
 }
+
+.insta{
+    width: 5%;
+}
+
