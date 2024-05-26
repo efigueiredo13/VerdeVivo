@@ -96,3 +96,22 @@ nav a:hover{
         flex-shrink: 0;
       
     }
+
+    h1{
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    img{
+        
+        width: 55%;
+    }
+
+    .btn_medir{
+        
+        display: block;
+        margin-top: 5%;
+        margin: auto;
+        width: 45%;
+    }

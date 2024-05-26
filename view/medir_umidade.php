@@ -45,14 +45,17 @@
                 <a class="btn btn-outline btn-sm" href="../controller/sair.php">Sair</a>
             </div>
     </div>
-    <h1>Dados de Umidade do Solo</h1>
+    
     <div class="container">
 
     <?php
      include_once('../controller/api_sensor.php');
     ?>
+    <img src="../assets/img/sensor.png" alt="sensor de umidade">
 
     </div>
+
+    <a href="medir_umidade.php"  class=" btn_medir btn btn-success">Medir Umidade</a>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

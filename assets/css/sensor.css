@@ -1,6 +1,8 @@
 .container {
     width: 80%;
     max-width: 600px;
+    height: 65%;
+    margin-top: 5%;
     text-align: center;
     background: #fff;
     padding: 20px;
