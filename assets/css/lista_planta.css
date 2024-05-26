@@ -34,7 +34,8 @@ nav a:hover{
   }
 
 .cabecalho{
-    max-width: 2500px;
+    max-width: 4000px;
+    
     height: 80px;
     display: flex;
     margin: 0 auto;
@@ -103,7 +104,7 @@ nav a:hover{
         margin-bottom: 2%;
         display: flex;
         justify-content: center;
-        gap: 0.5%;
+        gap: 0.9%;
     }
 
     .table-bg{
@@ -119,6 +120,15 @@ nav a:hover{
     
     #botoes{
         width: 90px;
+    }
+
+    .btn_tudo{
+        display: block;
+        margin: auto;
+        font-size: 13px;
+        
+        height: 6%;
+        width: 25%;
     }
 
    

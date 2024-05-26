@@ -52,6 +52,9 @@
             </svg>
         </button>
     </div>
+    
+    <a href="minhas_planta.php"  class=" btn_tudo btn btn-success">Ver tudo</a>
+
 
     <div class="m-5">
         <table class="table table-bg">
