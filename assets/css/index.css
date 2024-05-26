@@ -147,8 +147,17 @@ margin-right: 50px;
 }
 
 .container4 {
+    margin-top: 20px;
     text-align: center;
     height: 350px;
+    flex-shrink: 0;
+    background: var(--Segundaria, #FFF3D6);
+    color: #00816B;   
+}
+
+.container5 {
+    text-align: center;
+    height: 380px;
     flex-shrink: 0;
     background: var(--Segundaria, #00816B);
     color: #FFF3D6;   
@@ -160,17 +169,20 @@ margin-right: 50px;
     text-align: center;
     margin: 20px;
 }
+
 .fundador img {
     width: 150px; 
     height: 150px; 
-    border-radius: 50%;
+    border-radius: 15px;
     margin-bottom: 10px;
 }
+
 .nome {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 5px;
 }
+
 .cargo {
     font-size: 14px;
 }
@@ -181,4 +193,24 @@ margin-right: 50px;
     text-align: center;
     padding: 10px;
     
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+   
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
