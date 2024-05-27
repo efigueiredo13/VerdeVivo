@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -24,11 +27,20 @@
                 <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 <i class='bx bxs-lock-alt' ></i>
             </div>
+            
+            <?php if(isset($_SESSION['error'])): ?>
+    <div class="error" >
+        <?php 
+            echo $_SESSION['error']; 
+            unset($_SESSION['error']);
+        ?>
+    </div>
+        <?php endif; ?>
 
             <div class="remember-forgot">
                 <a href="#">Esqueceu a senha?</a>
             </div>
-
+            
             <input type="submit" name="submit" class="btn-Login" value="Entrar">
 
             <div class="registro">

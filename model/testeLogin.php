@@ -15,8 +15,7 @@
         
         if(mysqli_num_rows($result) < 1)
         {
-            unset($_SESSION['usuario']);
-            unset($_SESSION['senha']);
+            $_SESSION['error'] = "Usuário ou senha incorretos!";
             header('Location: ../view/login.php');
         }
         else
@@ -29,7 +28,6 @@
     }
     else
     {
-        // Não acessa
         header('Location: ../view/login.php');
     }
 

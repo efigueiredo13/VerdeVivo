@@ -134,3 +134,12 @@ body {
 .voltar p a:hover {
   text-decoration: underline;
 }
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
