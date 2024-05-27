@@ -1,18 +1,27 @@
 <?php  
+    $message = '';
     if(isset($_POST['submit'])){
 
         include_once('../model/config.php');
 
-        $usuario = $_POST['usuario']; 
-        $email = $_POST['email']; 
-        $senha = $_POST['senha'];
+        $usuario = mysqli_real_escape_string($conexao, $_POST['usuario']); 
+        $email = mysqli_real_escape_string($conexao, $_POST['email']); 
+        $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
-        $result = mysqli_query($conexao, "INSERT INTO cadastro(usuario, senha, email) 
-        VALUES('$usuario', '$senha', '$email')");
-
-       
+        $check = mysqli_query($conexao, "SELECT * FROM cadastro WHERE usuario='$usuario' OR email='$email'");
+        if(mysqli_num_rows($check) > 0){
+            $message = 'Usuário ou email já cadastrado!';
+        } else {
+            $result = mysqli_query($conexao, "INSERT INTO cadastro(usuario, senha, email) VALUES('$usuario', '$senha', '$email')");
+            if($result){
+                echo "<script>alert('Cadastro enviado com sucesso!'); window.location.href='login.php';</script>";
+            } else {
+                $message = 'Erro ao enviar o cadastro.';
+            }
+        }
     }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -21,11 +30,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="../assets/css/registro.css">
+    <link rel="stylesheet" href="../assets/css/popup_registro.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../assets/img/logo 1.svg" type="image/x-icon">
 </head>
 <body>
+
     <div class="wrapper">
+   
         <form action="registro.php" method="POST">
             <h1>Registre-se</h1>
             <div class="input-box">
@@ -42,7 +54,9 @@
                 <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 <i class='bx bxs-lock-alt' ></i>
             </div>
-
+            <div id="message" style="text-align: center; font-size: 20px; color: red; margin-bottom: 20px;">
+                <?php echo $message; ?>
+            </div>    
             <input type="submit" name="submit" class="btn-Login" value="Registrar">
 
             <div class="registro">
@@ -51,6 +65,8 @@
             </div>
         </form>
     </div>
+</div>
+
     <!--------------API de Libras--------------------->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -62,4 +78,4 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 </body>
-</html>
+</html> 
