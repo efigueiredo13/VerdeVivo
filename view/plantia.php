@@ -33,27 +33,6 @@
     
 </head>
 <body>
-
-    <!--
-    <div class="splash">
-            <div class="intro">
-                <img src="../assets/img/logo 1.svg" style="width: 12%;" alt="logo">
-                <h1 class="logo">
-                    <span class="logo-parts">I</span>
-                    <span class="logo-parts">N</span>
-                    <span class="logo-parts">I</span>
-                    <span class="logo-parts">C</span>
-                    <span class="logo-parts">I</span>
-                    <span class="logo-parts">A</span>
-                    <span class="logo-parts">N</span>
-                    <span class="logo-parts">D</span>
-                    <span class="logo-parts">O</span>
-                </h1>
-            </div>
-        </div>
-    <script src="../assets/javascript/splash.js"></script>
-    -->
-    
     <div class="cabecalho" id= "cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
             <nav>
@@ -186,7 +165,7 @@
             </div>
         </div>
     </div>
-
+    <script src="../assets/javascript/foco_pagina.js"></script>                    
     <!--------------API de Libras--------------------->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -199,6 +178,7 @@
     <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 
     <script src="../assets/javascript/tab.js"></script>
+    
 
 <footer>
     <p>© 2024 Verde Vivo. Todos os direitos reservados.</p>
