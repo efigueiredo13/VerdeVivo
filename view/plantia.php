@@ -1,6 +1,7 @@
 <?php
     session_start();
     include_once('../model/config.php');
+    
 
     if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true)) {   
         unset($_SESSION['usuario']);
@@ -11,6 +12,7 @@
 
     $logado = $_SESSION['usuario'];
 
+    include_once('../controller/secao_splash.php');
     //chamando o cadastro da planta
     include_once('../model/testeCadastroPlanta.php');
 ?>
@@ -32,7 +34,7 @@
 </head>
 <body>
 
-    
+    <!--
     <div class="splash">
             <div class="intro">
                 <img src="../assets/img/logo 1.svg" style="width: 12%;" alt="logo">
@@ -50,7 +52,7 @@
             </div>
         </div>
     <script src="../assets/javascript/splash.js"></script>
-    
+    -->
     
     <div class="cabecalho" id= "cabecalho">
         <img id="logo" src="../assets/img/logo 1.svg" alt="logo do site" >
