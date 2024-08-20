@@ -204,7 +204,7 @@ margin-right: 50px;
     background: var(--degrade, linear-gradient(90deg, #3CAD5C 1.5%, #03584a 100%));
     color: #FFF3D6;
     text-align: center;
-    padding: 10px;
+    padding: 11px;
     max-height: 2000px;
 }
 
